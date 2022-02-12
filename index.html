@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Meditation App</title>
+  </head>
+  <body class="body">
+     
+      <header class="header">
+        <div class="time-select">
+          <button data-time="300"> 5 Minuts</button>
+          <button data-time="600"> 10 Minuts</button>
+          <button data-time="900"> 15 Minuts</button>
+        </div>
+        <div class="sound-picker">
+          <button data-sound="./sounds/alef.mp3" data-video="./video/mandala2.mp4"><img src="./svg/moon-stars.svg" />
+          <button data-sound="./sounds/alef.mp3" data-video="./video/mandala.mp4"><img src="./svg/infinity.svg" />
+        </div>      
+      </header>
+
+
+    <div class="app">
+      <div class="vid-container">
+        <video loop>
+          <source src="./video/mandala2.mp4"/>
+        </video>
+      </div>
+
+      
+      <div class="player-container">
+        <audio class="song">
+          <source src="./sounds/alef.mp3" />
+        </audio>
+        <img src="./svg/pause.svg" alt="play" class="play"/>
+        <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+          </svg>
+          <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle  cx="226.5" cy="226.5" r="216.5" stroke="#000" stroke-width="20"/>
+            </svg>
+          </svg>  
+      </div>  
+    </div>
+
+    <footer class="recordings">
+      <img src="./svg/replay.svg" class="replay"></img>
+          <h3 class="time-display">0:00</h3>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
